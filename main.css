@@ -1,0 +1,143 @@
+:root {
+    --primary-white: rgb(200, 200, 200);
+    --primary-cyan: rgb(70, 190, 200);
+    --secondary-cyan: rgb(20, 130, 130);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #222;
+    color: var(--primary-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10vh;
+    margin-inline: 15vw;
+}
+
+@media (max-width: 40em) {
+    body {
+        margin-inline: 8vw;
+    }
+}
+
+body > div:not(.navbar) {
+    margin-top: 15vh;
+}
+
+/* Titles */
+
+.title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 1;
+    color: var(--primary-white);
+    margin-block: 5vh;
+    padding-block: 2vh;
+    border-bottom: 2px dashed;
+}
+
+/* Navbar */
+
+.navbar {
+    width: 100%;
+    padding: 2vh 5vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--primary-cyan);
+    display: inline;
+}
+
+@media (max-width: 40em) {
+    .heading {
+        font-size: 2rem;
+    }
+}
+
+.nav-links {
+    display: inline;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--secondary-cyan);
+    font-size: 1.2rem;
+    margin-inline: 1vw;
+}
+
+@media (max-width: 40em) {
+    .navbar a {
+        font-size: 0.8rem;
+        margin-inline: 2px;
+    }
+}
+
+.twitter-link:active {
+    color: rgb(40, 170, 230);
+}
+
+.github-link:active {
+    color: rgb(80, 80, 80);
+}
+
+/* Description */
+
+.description {
+    opacity: 0.8;
+}
+
+/* Dummy 3D Button */
+
+.dummy-3d-btn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.dummy-3d-btn div {
+    margin-block: 15vh;
+    margin-inline: auto;
+}
+
+.dummy-3d-btn button {
+    outline: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+}
+
+.btn {
+    color: var(--primary-white);
+    background: #222;
+    border: 2px solid var(--primary-cyan);
+    position: absolute;
+    z-index: 1;
+    transform: translate(-0.4rem, -0.4rem);
+    transition: transform 250ms ease;
+}
+
+.btn:active {
+    transform: translate(0, 0);
+}
+
+.dummy-btn {
+    background: url('images/btn-bg.png');
+    background-size: contain;
+    border: 2px solid var(--secondary-cyan);
+}
