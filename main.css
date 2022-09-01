@@ -76,7 +76,8 @@ body > div:not(.navbar) {
 
 .navbar a {
     text-decoration: none;
-    color: var(--secondary-cyan);
+    color: var(--primary-white);
+    opacity: 0.6;
     font-size: 1.2rem;
     margin-inline: 1vw;
 }
@@ -88,12 +89,12 @@ body > div:not(.navbar) {
     }
 }
 
-.twitter-link:active {
-    color: rgb(40, 170, 230);
+.twitter-link:hover {
+    color: rgb(96, 186, 227);
 }
 
-.github-link:active {
-    color: rgb(80, 80, 80);
+.github-link:hover {
+    color: rgb(100, 100, 100);
 }
 
 /* Description */
