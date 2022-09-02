@@ -41,12 +41,6 @@ body > div:not(.navbar) {
     display: inline;
 }
 
-@media (max-width: 40em) {
-    .heading {
-        font-size: 2rem;
-    }
-}
-
 .title {
     font-size: 4rem;
     font-weight: bold;
@@ -56,14 +50,22 @@ body > div:not(.navbar) {
     border-bottom: 2px dashed;
 }
 
+.subtext {
+    padding-block: 2rem;
+    font-size: 1.5rem;
+}
+
 @media (max-width: 40em) {
+    .heading {
+        font-size: 2rem;
+    }
     .title {
         font-size: 3.5rem;
     }
-}
-
-.subtext {
-    padding-block: 1rem;
+    .subtext {
+        padding-block: 1.5rem;
+        font-size: 1rem;
+    }
 }
 
 /* Navbar */
