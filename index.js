@@ -15,3 +15,20 @@ for (j=0; j<frostCard.length; j++) {
         this.style.opacity = "1";
     })
 }
+
+// Day Night Button Functioning
+
+let btnDiv = $(".day-night-btn");
+let toggle = $(".toggle");
+let icon = $(".icon i");
+
+btnDiv.addClass("day-btn");
+toggle.addClass("toggle-day");
+icon.addClass("fa-circle");
+
+btnDiv.click(function() {
+    btnDiv.toggleClass("night-btn");
+    toggle.toggleClass("toggle-night");
+    icon.toggleClass("fa-moon");
+    }
+)

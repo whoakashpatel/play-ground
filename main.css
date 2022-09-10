@@ -244,3 +244,48 @@ body > div:not(.navbar) {
         border-radius: 0.8rem;
     }
 }
+
+/* Day Night Button */
+
+.day-night-btn {
+    width: calc(30vw + 1rem);
+    border-radius: 2rem;
+    padding: 0.5rem;
+    margin: 15vh auto;
+    background: #fff;
+}
+.day-btn {background: linear-gradient(rgba(232, 67, 34, 0.8), rgba(230, 163, 38, 0.8));}
+.night-btn {background: linear-gradient(rgba(82, 35, 237, 0.5), rgba(40, 125, 238, 0.5));}
+
+.toggle {
+    width: 15vw;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: rgba(255,255,255, 0.2);
+    pointer-events: none;
+}
+.toggle-day {transform: translate(0, 0);}
+.toggle-night {transform: translate(15vw, 0);}
+
+.icon i {
+    font-size: 10vw;
+    position: fixed;
+    inset: 2.5vw;
+}
+
+@media (min-width: 40em) {
+    .day-night-btn {
+        width: calc(10vw + 3rem);
+        padding: 1.5rem;
+        border-radius: 4rem;
+    }
+    .toggle {
+        width: 5vw;
+    }
+    .icon i {
+        font-size: 4vw;
+        inset: 0.5vw;
+    }
+    .toggle-day {transform: translate(0, 0);}
+    .toggle-night {transform: translate(5vw, 0);}
+}
