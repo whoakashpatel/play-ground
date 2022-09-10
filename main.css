@@ -263,7 +263,7 @@ body > div:not(.navbar) {
     border-radius: 50%;
     background: rgba(255,255,255, 0.2);
     pointer-events: none;
-    transition: transform 1000ms ease-out;
+    transition: transform 300ms ease-out;
 }
 .toggle-day {transform: translate(0, 0);}
 .toggle-night {transform: translate(15vw, 0);}
